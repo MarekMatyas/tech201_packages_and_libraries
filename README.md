@@ -10,7 +10,7 @@ A library is a set of related **modules or packages bundled together**.
 
 Let's look at a quick example: 
 
-``` 
+``` python
 from random import random
 ```
 This imports library called random and the way we can test it is as follows:
@@ -26,7 +26,7 @@ We can also import another library called `math`:
 import math
 ```
 And use this library creating a variable called `num_float` and using following print statements:
-``` 
+``` python
 num_float = 23.66
 print(math.ceil(num_float))
 print(math.floor(num_float))
@@ -54,7 +54,7 @@ When you are building a program, it's really important to think whether you need
 ### Quick example:
 
 We can `import` modules called `math`, `datetime`, `os`, and `sys`
-``` 
+``` python
 import os
 import math , datetime, sys
 ```
@@ -67,7 +67,7 @@ print(working_directory)
 
 This command shows us the current working directory (Where we are locally).
 
-``` 
+``` python
 print(datetime.date.today())
 print(sys.path)
 ```
@@ -81,7 +81,7 @@ We need to create a couple functions:
 
 Let's say we have created a file called `module` storing these functions
 
-``` 
+``` python
 def return_user_id():
     print(os.getpid())
 
@@ -94,6 +94,16 @@ Then in another file called `use_module`:
 `from modules import *`
 
 Notice we used `*` to specify we want to import everything. 
+
+---
+
+### Packages and `pip`
+
+`pip` is Python's package manager and installer (for anything external we have to use `pip`).
+
+To install `pip`, here are the steps:
+
+First we check the version
 
 
 
