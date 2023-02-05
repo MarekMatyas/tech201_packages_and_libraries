@@ -97,14 +97,28 @@ Notice we used `*` to specify we want to import everything.
 
 ---
 
-### Packages and `pip`
+## Packages and `pip`
 
 `pip` is Python's package manager and installer (for anything external we have to use `pip`).
 
-To install `pip`, here are the steps:
+### 3. Packages
 
-First we check the version
+Packages are an essential building block in programming. Without packages we'd spend a lots of time writing code that's been already written. 
 
+### Package creating steps:
+
+1. Create a package folder
+2. Within that folder create an app folder in which you create 2.py files: init and fizzbuzz (for instance)
+3. And lastly within that package folder create 2.py files: program and setup
+
+In this example:
+***.innit file*** is the initialisation package
+
+***fizzbuzz file*** is the program code that contains all the logic such as functions and classes.
+
+***setup file*** is the configuration of our package and the information we want to pass to our package to be identified.
+
+***program file*** Invokes the fizzbuzz solution from `fizzbuzz.py`(calls the code written in the fizzbuzz file)
 
 
 
